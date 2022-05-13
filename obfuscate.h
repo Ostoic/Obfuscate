@@ -27,6 +27,9 @@ std::cout << obfuscated_string << std::endl;
 
 ----------------------------------------------------------------------------- */
 
+#ifndef AY_OBFUSCATE_H
+#define AY_OBFUSCATE_H
+
 #ifndef AY_OBFUSCATE_DEFAULT_KEY
 	// The default 64 bit key to obfuscate strings with.
 	// This can be user specified by defining AY_OBFUSCATE_DEFAULT_KEY before 
@@ -200,6 +203,7 @@ namespace ay
 		return obfuscated_data; \
 	}()
 
+#endif
 /* -------------------------------- LICENSE ------------------------------------
 
 Public Domain (http://www.unlicense.org)
